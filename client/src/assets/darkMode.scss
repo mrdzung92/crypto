@@ -1,0 +1,33 @@
+$bgColor1: #181a20;
+$textPrimary: #EAECEF;
+$primaryColor: #FCD535;
+
+div#wrapper {
+    &.dark-mode {
+
+        //headerPage
+        .head-com {
+            background-color: $bgColor1 ;
+            .right-content {
+                .icon {
+                    color:$textPrimary;
+                }
+            }
+        }
+
+
+        // navBar
+        .nav-com {
+            background-color: $bgColor1 ;
+
+            .link {
+                color: $textPrimary ;
+
+                &.active {
+                    color: $primaryColor ;
+                }
+            }
+        }
+    }
+
+}
