@@ -1,18 +1,35 @@
 $bgColor1: #181a20;
 $textPrimary: #EAECEF;
 $primaryColor: #FCD535;
-
+$depthBuyBg :#102821;
+$colorDisable: #474D57;
 div#wrapper {
     &.dark-mode {
-
         //headerPage
         .head-com {
             background-color: $bgColor1 ;
+
             .right-content {
                 .icon {
-                    color:$textPrimary;
+                    color: $textPrimary;
+                }
+                .lang{
+                    .lang-list{
+                        background-color: $colorDisable;
+                        opacity: 0.9;
+                        &::before{
+                            border-bottom-color: $colorDisable; 
+                        }
+                        .lang-item{
+                            .text {
+                                color: $textPrimary;
+                            }
+                        }
+                    }
+                   
                 }
             }
+
         }
 
 
@@ -28,6 +45,50 @@ div#wrapper {
                 }
             }
         }
-    }
 
+        //==========home-content===
+        .home-content{
+            background-color: #2B3139;
+
+            .marquee{
+                background-color: var(--color-iconNormal);
+                .icon{
+                    background-color: var(--color-iconNormal);
+                    color: var(--color-textPrimary);
+
+                }
+                .text{
+                    color: var(--color-textGray);
+                }
+            }
+            .hot-crypto{
+                .title{
+                    color: var(--color-textWhite);
+                }
+                .crypto-list {
+                    .crypto-item{
+                        .link{
+                            .left {
+                                .name{
+                                    color: var(--color-textWhite);
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+
+            .service {
+                .content {
+                    
+                    .text{
+                        color: var(--color-textPrimary);
+                    }
+                }
+            }
+
+        }
+
+
+    }
 }

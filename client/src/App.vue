@@ -11,6 +11,7 @@ export default {
     return {}
   },
   methods: {
+
     setLocalTheme() {
       // 处理主题
       const localTheme = localStorage.getItem('theme')
@@ -20,6 +21,12 @@ export default {
         }
       } else {
         localStorage.setItem('theme', 'default')
+      }
+    },
+    setDefaultLang(){
+      const lang = localStorage.getItem('lang');
+      if(!lang){
+        localStorage.setItem('lang','zh');
       }
     }
   },
