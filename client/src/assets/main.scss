@@ -5,7 +5,35 @@
     margin: 0 auto;
     font-weight: normal;
 
+    // page router transition 
+    .page-enter-active,
+    .page-leave-active {
+        transition: transform 0.5s;
+    }
 
+    .page-enter,
+    .page-leave-to {
+        transform: translateX(100%);
+    }
+
+    //==========head top com ===========
+    .head-top-com{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 1px 2px 2px var(--color-textGray);
+        .link{
+            font-size: 18px;
+            color: var(--color-textBlack);
+            display: flex;
+            align-items: center;
+            .icon{
+                font-size: 22px;
+                padding: 1px 10px;
+               
+            }
+        }
+    }
 
     //===============headerPage
     .head-com {
@@ -58,7 +86,8 @@
                     border-radius: 10px;
                     right: -32px;
                     top: 36px;
-                    &::before{
+
+                    &::before {
                         content: '';
                         position: absolute;
                         width: 0;
@@ -66,18 +95,19 @@
                         border-left: 18px solid transparent;
                         border-right: 18px solid transparent;
                         border-bottom: 11px solid var(--color-textGray);
-                    top: -10px;
-                    right: 32px;
-                    
-                      
+                        top: -10px;
+                        right: 32px;
+
+
                     }
+
                     .lang-item {
                         display: flex;
                         min-width: 130px;
                         width: 100%;
                         padding: 5px;
                         align-items: center;
-                       
+
                         img {
                             width: 30px;
                             height: 20px;
@@ -366,7 +396,178 @@
 
     // end==============home========
 
+    // login-page start==============
+    .login-page {
+        .login-body{
+            .logo {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                img {
+                    width: 200px;
+                    height: 50px;
+                }
 
+            }
+            .form-content{
+                margin-top: 40px;
+                margin-left: 18px;
+                margin-right: 18px;
+
+                .form-group{
+                    height: 42px;
+                    background-color: var(--color-textGray);
+                    margin-bottom: 15px;
+                    // padding: 0px 10px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    input[type=text]{
+                        flex: 1;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: var(--color-textGray);
+                        font-size: 16px;
+                    }
+                    .icon{
+                        font-size: 24px;
+                        margin: 0px 10px;
+                        color: var(--color-textBlack);
+                    }
+
+                    &.verify {
+                        position: relative;
+                        img {
+                            position: absolute;
+                            right: 2px;
+                            width: 80px;
+                            height: 30px;
+                        }
+                    }
+                }
+                
+            }
+            .form-footer{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 16px;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    input[type=checkbox]{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .controll{
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 30px;
+                button {
+                    width: 100%;
+                    height: 42px;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: var(--color-primaryHover);
+                }
+            }
+           
+        }
+    }
+    // end =========== login-page
+
+    // register-page ===========start
+    .register-page {
+        .register-body{
+            .logo {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                img {
+                    width: 200px;
+                    height: 50px;
+                }
+
+            }
+            .form-content{
+                margin-top: 40px;
+                margin-left: 18px;
+                margin-right: 18px;
+               
+                border-radius: 10px;
+                box-shadow: 0px 0px 2px 2px var(--color-textGray);
+                padding: 5px 10px;
+                .form-group{
+                    height: 42px;  
+                    display: flex;
+                    align-items: center;    
+                    overflow: hidden;
+                    border-bottom: 1px dotted var(--color-textBlack);
+                    label {
+                        font-size: 16px; 
+                        margin-right: 10px;
+                        font-weight: bold;
+                    }
+                    input[type=text]{
+                        flex: 1;
+                        height:40px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                       
+                    }
+        
+
+                    &.verify {
+                        position: relative;
+                        border-bottom: none;
+                        img {
+                            position: absolute;
+                            right: 2px;
+                            width: 80px;
+                            height: 30px;
+                        }
+                    }
+                }
+                
+            }
+            .form-footer{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 18px;
+                
+                margin-top: 20px;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    input[type=checkbox]{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .controll{
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 30px;
+                button {
+                    width: 100%;
+                    height: 42px;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: var(--color-primaryHover);
+                }
+            }
+           
+        }
+    }
 
 
 

@@ -6,8 +6,8 @@
 
         <div class="right-content">
             <div class="action">
-                <router-link class="link" to="/">登录</router-link>
-                <router-link class="link" to="/">注册</router-link>
+                <router-link class="link" to="/login">登录</router-link>
+                <router-link class="link" to="/register">注册</router-link>
             </div>
             <div class="lang">
                 <font-awesome-icon @click="() => { activeLangBox = !activeLangBox }" class="icon"
